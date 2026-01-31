@@ -155,7 +155,8 @@ footer {
 
 .participants-list {
   margin: 0;
-  padding-left: 20px; /* keep bullets */
+  padding-left: 0;
+  list-style: none; /* hide bullets */
 }
 
 .participant-item {
@@ -166,7 +167,21 @@ footer {
   padding: 6px 8px;
   border-radius: 6px;
   background-color: #f1f8ff;
-  list-style-position: inside; /* keep visible bullet */
+}
+
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .avatar {
